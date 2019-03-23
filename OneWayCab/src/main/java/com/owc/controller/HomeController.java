@@ -16,8 +16,22 @@ public class HomeController {
 		ModelAndView model = new ModelAndView("homePage");
 		return model;
 	}
+	
+	@RequestMapping(value="/aboutus", method=RequestMethod.GET)
+	public ModelAndView aboutus() {
+
+		ModelAndView model = new ModelAndView("aboutUs");
+		return model;
+	}
 
 	
+	@RequestMapping(value="/contactus", method=RequestMethod.GET)
+	public ModelAndView contactus() {
+
+		ModelAndView model = new ModelAndView("contactUs");
+		return model;
+	}
+
 	/*@RequestMapping(value="/product", method=RequestMethod.GET)
 	public ModelAndView getProductForm() {
 
