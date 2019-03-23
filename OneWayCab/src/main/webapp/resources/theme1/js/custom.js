@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	    $('#datepicker').datepicker();
+	    $('#datepicker').datepicker({ minDate: 0 });
 	});
 
 var series = [

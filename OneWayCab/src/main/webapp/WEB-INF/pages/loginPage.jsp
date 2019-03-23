@@ -39,26 +39,25 @@
 				<div class="row">
 					<div class="col-md-9">
 					    <h2>Contact Us</h2><br>
-					    <p>A2z Info Solutions Pvt. Ltd.<br>
-						   Lower Chutia, Near Shiv Mandir<br>
-						   Ranchi-834001<br>
+					    <p>One Way Pvt. Ltd.<br>
+						   Ranchi-834006<br>
 						   Jharkhand, India<br>
-						   Contact No: +91-8460063820<br>
-						   Email Id: kuldeep.kdp@gmail.com</p>
+						   Contact No: 1234563546<br>
+						   Email Id: info_onewaycab@gmail.com</p>
 					</div>
 					<div class="col-md-3">
 					    <h2>Our Services</h2><br>
-					    <p class="colorD"><a href="softwareDevelopment.html">Software development</a><br>
-						   <a href="websiteDesiging.html">Website desiging</a><br>
-						   <a href="softwareTesting.html">Software testing</a><br>
-						   <a href="dataEntry.html">Data entry</a>
+					    <p class="colorD"><a href="/OneWayCab/chooseCities">Book Cab</a><br>
+						   <a href="/OneWayCab/chooseCities">home</a><br>
+						   <a href="/OneWayCab/chooseCities">contact</a><br>
+						   
 						   </p>
 					</div>
 				</div>
 				
 				<div class="row">
 				    <div class="col-md-12 text-center">
-					<h6>© A2z Info Solutions Pvt. Ltd.</h6>
+					<h6>© One Way Cab Pvt.</h6>
 					</div>
 					
 				</div>

@@ -15,10 +15,7 @@ table, th, td {
 </head>
 <body>
 
-<a href="/OneWayCab/goToHome">Go back to Home Page</a> <br><br>
-
-<a href="/OneWayCab/customerAdd">Add new customers</a> <br><br>
-
+<a href="/OneWayCab/admin/home">Go back to Home Page</a> <br><br>
 
  <table align="left" border="1">
   <tr>

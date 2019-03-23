@@ -28,6 +28,14 @@ public class LoginController {
 		return model;
 	}
 	
+	@RequestMapping(value="/admin/home", method=RequestMethod.GET)
+	public ModelAndView admin() {
+          
+		ModelAndView model = new ModelAndView("adminHomePage");
+		//model.addObject("msg", userId);
+		return model;
+		}
+	
 	@RequestMapping(value="/admin/home", method=RequestMethod.POST)
 	public ModelAndView getHomePage(@RequestParam("userId") String userId,@RequestParam("password") String password) {
           
