@@ -19,21 +19,57 @@
     <script src="${jqueryJs}"></script>
     <script src="${bootstrapJs}"></script>
 </head>
-<body>
+<body style="background-color:#F7DC6F;">
+<container>
+<div class="row">
+	<div class="col-md-10">
+	<img src="/OneWayCab/resources/images/logo.png"><b>Pay only for the distance you have travelled</b>
+	</div>
+	<div class="col-md-2"><br><br><br><br>
+	<b>Call Us<br>8346572450</b>
+	</div>
+	</div>
+</container>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/OneWayCab/chooseCities">Home</a></li>
+      <li><a href="/OneWayCab/aboutus">About Us</a></li>
+      <li><a href="/OneWayCab/chooseCities">Book Cab</a></li>
+      <li><a href="/OneWayCab/contactus">Contact Us</a></li>
+      <li><a href="#">Check Booking Status</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="/OneWayCab/admin/login"><span class="glyphicon glyphicon-log-in"></span>Admin Login</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="bgcolorB">
-<h1 class="colorA">Sign In</h1>
-<form action="/OneWayCab/admin/home" method="POST"> 
+
+<form action="/OneWayCab/admin/home" method="POST">
+
+<div class="row" style="background-color:#FDFEFE;">
+<div class="col-md-3" >
+</div>
+
+<div class="col-md-4" > 
+<h2 class="colorA">Sign In</h2>
   <h1>${msg}</h1>
   User ID:<br>
   <input type="text" name="userId" ><br>
   Password:<br>
-  <input type="text" name="password" ><br><br>
-  <input type="submit" value="Submit">
+  <input type="password" name="password" ><br><br>
+  <input type="submit" value="Submit" class="btn btn-success">
+  </div>
+  <div class="col-md-5" >
+  
+  <img src="/OneWayCab/resources/images/admin.gif" height="100%" width="100%">
+  </div>
 </form>
 </div>
 
-<footer class="container-fluid bgcolorA">
+<footer class="container-fluid" style="background-color:black;"><font color="white">
 			
 			<div class="container">
 				<div class="row">
@@ -49,7 +85,7 @@
 					    <h2>Our Services</h2><br>
 					    <p class="colorD"><a href="/OneWayCab/chooseCities">Book Cab</a><br>
 						   <a href="/OneWayCab/chooseCities">home</a><br>
-						   <a href="/OneWayCab/chooseCities">contact</a><br>
+						   <a href="/OneWayCab/contactus">contact</a><br>
 						   
 						   </p>
 					</div>
