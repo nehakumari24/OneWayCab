@@ -33,10 +33,10 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/OneWayCab/chooseCities">Home</a></li>
+      <li><a href="/OneWayCab/chooseCities">Home</a></li>
       <li><a href="/OneWayCab/aboutus">About Us</a></li>
       <li><a href="/OneWayCab/chooseCities">Book Cab</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li class="active"><a href="#">Contact Us</a></li>
       <li><a href="#">Check Booking Status</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
