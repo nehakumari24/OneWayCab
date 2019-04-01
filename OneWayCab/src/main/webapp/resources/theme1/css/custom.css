@@ -1,64 +1,15 @@
-.no-margin{
-	 margin: 0px;
-}
-
-.no-padding{
-	
-	padding: 0px;
-	
-}
-
-.colorA{
-	color:#000000;
-}
-
-.colorA h2{
-	color:white;
-}
-
-.colorA h4{
-	color:#272727;
-}
-
 .bgcolorA{
-	background-color:#000000;
-}
-
-.colorB{
-	color:#f2a900;
+	background-color:#F7DC6F;
 }
 
 .bgcolorB{
-	background-color:#f2a900;
-}
-
-.colorC{
-	color:#7e7e7e;
+	background-color:#FDFEFE;
 }
 
 .bgcolorC{
-	background-color:#7e7e7e;
+	background-color:black;
 }
 
-.colorD{
-	color:#fff;
-}
-
-.colorD a{
-	color:#fff;
-}
-
-.bgcolorD{
-	background-color:#fff;
-}
-
-.colorE{
-	color:#272727;
-}
-
-.bgcolorE{
-	background-color:#272727;
-}
 
 
 

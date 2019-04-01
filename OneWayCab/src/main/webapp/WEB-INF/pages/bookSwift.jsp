@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Swift</title>
-<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
+    <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
 	<spring:url value="/resources/css/custom.css" var="custom" />
 	<spring:url value="/resources/css/jquery-ui.min.css" var="jqueryUiCss" />
 	<spring:url value="/resources/js/jquery-3.1.1.min.js" var="jqueryJs" />

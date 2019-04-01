@@ -94,4 +94,22 @@ public class RiderController {
 	
 	
 	}
+	
+	@RequestMapping(value="/checkBookingStatus", method=RequestMethod.GET)
+	public ModelAndView checkBookingStatus() {
+
+		ModelAndView model = new ModelAndView("checkBookingStatus");
+		return model;
+	}
+	
+	@RequestMapping(value = "/checkBookingStatus", method = RequestMethod.POST)
+	public ModelAndView getBookingStatus(@ModelAttribute("riders") Riders riders, BindingResult result) {
+		
+		RiderImp rider= new RiderImp();
+		List<Riders> bookingList= rider.getBookingStatus(riders.getPhoneNo());
+		System.out.println("Booking status is " + bookingList.get(0).getStatus());
+		ModelAndView model = new ModelAndView("bookingStatus");
+		model.addObject("bookingList", bookingList);
+		return model;
+	}
 }
