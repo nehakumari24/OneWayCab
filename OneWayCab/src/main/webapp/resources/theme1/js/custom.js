@@ -21,3 +21,28 @@ var series = [
 		
 		$('.product').html(options);
 	});
+
+var citiesByState = {
+		MadhyaPradesh: ["Bhopal", "Indore", "Gwalior", "Jabalpur"],
+		Jharkhand: ["Ranchi", "Tata", "Bokaro", "Dhanbad"],
+		Maharashtra: ["Mumbai", "Pune", "Nagpur", "Nashik"]
+	}
+
+	    function changecat(value) {
+	        if (value.length == 0) document.getElementById("category").innerHTML = "<option></option>";
+	        else {
+	            var catOptions = "";
+	            for (categoryId in citiesByState[value]) {
+	                catOptions += "<option>" + citiesByState[value][categoryId] + "</option>";
+	            }
+	            document.getElementById("category").innerHTML = catOptions;
+	        }
+	        if (value.length == 0) document.getElementById("category2").innerHTML = "<option></option>";
+	        else {
+	            var catOptions = "";
+	            for (categoryId in citiesByState[value]) {
+	                catOptions += "<option>" + citiesByState[value][categoryId] + "</option>";
+	            }
+	            document.getElementById("category2").innerHTML = catOptions;
+	        }
+	    }

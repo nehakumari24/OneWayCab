@@ -43,7 +43,7 @@
       <li><a href="/OneWayCab/aboutus">About Us</a></li>
       <li><a href="/OneWayCab/chooseCities">Book Cab</a></li>
       <li><a href="/OneWayCab/contactus">Contact Us</a></li>
-      <li><a href="/OneWayCab/checkBookingStatus">Check Booking Status</a></li>
+      <li><a href="#">Check Booking Status</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       
@@ -51,64 +51,16 @@
     </ul>
   </div>
 </nav>
-<form action="/OneWayCab/fares" method="POST">
-<container>
 
-<div class="row bgcolorB">
-<div class="col-md-10">
-<h2> Choose your State </h2><br><br>
-<select name="state" id="state" onChange="changecat(this.value);">
-    <option value="" disabled selected>Select</option>
-    <option value="MadhyaPradesh">Madhya Pradesh</option>
-    <option value="Jharkhand">Jharkhand</option>
-    <option value="Maharashtra">Maharashtra</option>
-</select>
-<h2> Choose your cities </h2><br><br>
-</div>
-</div>
-<div class="row bgcolorB">
-	<div class="col-md-2">
-<b>Pickup City:</b>
-  <select name="pickupCity" id="category">
-    <option value="" disabled selected>Select</option>
-</select>
-  <div class="row">
-  <div class="col-md-8">
-  
-  <img src="/OneWayCab/resources/images/customer.png" height="100%" width="100%"><br><br>
-  <img src="/OneWayCab/resources/images/carfi.png" height="100%" width="100%">
-  </div>
-  <div class="col-md-4" >
-  </div>
-  </div>
- </div>
- <div class="col-md-2" >
- <b> Destination City:</b>
-  <select name="destinationCity" id="category2">
-    <option value="" disabled selected>Select</option>
-</select>
-  <div class="row">
-  <div class="col-md-10">
-  "Now get discounted AC cab for your one-way travel.Our Services & Cab adhere to services standards"<br><br><br>
-  "Enabled via our specialized experience of last 2 yrs enabled by our tech platform.               "<br><br><br>
-  
-  </div>
-  <div class="col-md-2" >
-  </div>
-  </div>
-  </div>
-  <div class="col-md-2">
-<button type="submit" class="btn btn-success">Submit
-</button>
-</div>
-  <div class="col-md-6" >
-  <img src="/OneWayCab/resources/images/cab1.jpg" height="60%" width="90%" border-radius="50%">
-  </div>
-  <br><br>
-  </div>
- </container>
-  </form>
-<br><br>
+  <c:forEach items="${bookingList}" var="v">
+   <br>
+    <h1> Your Booking for Date <c:out value="${v.date}" /> from <c:out value="${v.pickupCity}" /> to <c:out value="${v.destinationCity}" /> is <c:out value="${v.status}" /> </h1>
+    <br>
+  </c:forEach>
+
+
+
+
 <footer class="container-fluid bgcolorC"><font color="white">
 			<div class="container">
 				<div class="row">

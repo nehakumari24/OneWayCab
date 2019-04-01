@@ -10,6 +10,7 @@ import org.hibernate.cfg.Configuration;
 import com.owc.model.Customers;
 import com.owc.model.Riders;
 import com.owc.model.RouteAndFare;
+import com.owc.model.Users;
 
 public class RiderImp {
 	
@@ -88,9 +89,26 @@ public void updateRider(Riders c){
 	session.getTransaction().commit();
 	session.close();
 	sessionFactory.close();
-	
-	
 		
     }
+
+public List<Riders> getBookingStatus(String phoneNo){
+	
+	SessionFactory sessionFactory= new Configuration().configure().buildSessionFactory();
+	Session session=sessionFactory.openSession();
+	session.beginTransaction();
+
+    Query query= session.createQuery("from Riders where phoneNo = ? ");
+    query.setString(0, phoneNo);
+	
+	List<Riders> bookingList= (List<Riders>) query.list();
+	
+	session.getTransaction().commit();
+	session.close();
+	sessionFactory.close();
+
+	return bookingList;
+	
+}
 
 }
